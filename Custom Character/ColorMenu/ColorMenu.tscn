@@ -1,0 +1,67 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Themes/Main.tres" type="Theme" id=1]
+[ext_resource path="res://ColorMenu/ColorMenu.gd" type="Script" id=2]
+
+[node name="ColorMenu" type="Panel"]
+margin_right = 500.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 400, 400 )
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopMargin" type="Label" parent="Panel"]
+margin_right = 500.0
+margin_bottom = 33.0
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Window" type="HBoxContainer" parent="Panel"]
+margin_top = 37.0
+margin_right = 500.0
+margin_bottom = 598.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LeftMargin" type="Label" parent="Panel/Window"]
+margin_right = 16.0
+margin_bottom = 561.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+
+[node name="ColorPicker" type="ColorPicker" parent="Panel/Window"]
+margin_left = 20.0
+margin_right = 479.0
+margin_bottom = 561.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RightMargin" type="Label" parent="Panel/Window"]
+margin_left = 483.0
+margin_right = 500.0
+margin_bottom = 561.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+
+[node name="BottomMargin" type="Label" parent="Panel"]
+margin_top = 602.0
+margin_right = 500.0
+margin_bottom = 635.0
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
